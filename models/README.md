@@ -1,3 +1,3 @@
 # Models
 
-This folder contains trained PPO policies for end-effector trajectory tracking experiments.
+This folder contains trained PPO control policies for end-effector trajectory tracking.
