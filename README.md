@@ -1,3 +1,5 @@
 # PPO-Based Dynamic End-Effector Trajectory Tracking in MuJoCo
 
-PPO-based end-effector trajectory tracking in FetchReach with smooth control, domain randomisation, and robustness to observation and action noise.
+This project implements a reinforcement learning framework for dynamic end-effector trajectory tracking using PPO in MuJoCo.
+
+A Fetch robotic arm is trained to follow a continuous moving Cartesian trajectory while maintaining smooth and stable motion under uncertainty.
