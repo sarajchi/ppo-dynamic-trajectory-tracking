@@ -5,5 +5,8 @@ This project implements a reinforcement learning framework for dynamic end-effec
 A simulated Fetch robotic manipulator is trained to follow a continuous moving Cartesian trajectory while maintaining smooth and stable motion under uncertainty.
 
 
-<img width="196" height="146" alt="Adobe Express - Kp_0" src="https://github.com/user-attachments/assets/51523f42-d191-48bd-ab34-b9a5c2e9eda9" />
 
+
+
+
+<img width="1280" height="960" alt="Adobe Express - Kp_50_Rd_0 2 (4)" src="https://github.com/user-attachments/assets/bd29acec-b217-4454-b6c5-8f648e0ed620" />
