@@ -1,2 +1,2 @@
 # ppo-dynamic-trajectory-tracking
-PPO-based robotic trajectory tracking with smooth control, domain randomisation, and robust performance under observation and action noise.
+PPO-based end-effector trajectory tracking in FetchReach with smooth control, domain randomisation, and robustness to observation and action noise.
