@@ -63,3 +63,13 @@ Tracking performance was evaluated using:
 | Observation + Action Noise | 0.00727 | 0.10327 | 0.00526 | -0.03299 | -0.02472 |
 
 The results demonstrate stable trajectory tracking and robustness under multiple uncertainty conditions while maintaining low tracking error, smooth end-effector motion, and stable control behaviour under noisy observations and actuator disturbances.
+
+
+## Tracking Error Across Scenarios
+
+The figure below compares end-effector tracking error across multiple evaluation scenarios, including trajectory perturbations and observation/action noise conditions.
+
+The PPO policy maintains low steady-state tracking error and stable convergence under all tested disturbances.
+
+<img width="1920" height="1440" alt="all_scenarios_tracking_error" src="https://github.com/user-attachments/assets/369c4fc3-8a15-43b7-ba6a-764b5ae10251" />
+
