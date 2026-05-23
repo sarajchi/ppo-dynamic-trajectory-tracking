@@ -25,6 +25,20 @@ Final training statistics:
 
 The training converged stably with low PPO KL divergence and consistent trajectory tracking performance.
 
+## Domain Randomization
+
+During training, the trajectory and uncertainty parameters were randomized as follows:
+
+| Parameter | Range |
+|---|---:|
+| Centre X | 1.3 ± 0.05 m |
+| Centre Y | 0.75 ± 0.10 m |
+| Centre Z | 0.6 ± 0.03 m |
+| Radius | 0.10–0.20 m |
+| Time step / speed factor | 0.01–0.035 |
+| Observation noise std | 0.00–0.01 m |
+| Action noise std | 0.00–0.03 |
+
 
 ## Evaluation Results
 
