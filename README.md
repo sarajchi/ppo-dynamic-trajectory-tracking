@@ -28,7 +28,7 @@ The training converged stably with low PPO KL divergence and consistent trajecto
 
 ## Evaluation Results
 
-The trained PPO policy was evaluated across multiple trajectory and robustness scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, and observation/action noise disturbances.
+The trained PPO policy was evaluated across multiple trajectories and robustness scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, and observation/action noise disturbances.
 
 Tracking performance was evaluated using:
 
