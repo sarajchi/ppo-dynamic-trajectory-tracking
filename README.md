@@ -24,3 +24,28 @@ Final training statistics:
 | Final Learning Rate | 1.66e-08 |
 
 The training converged stably with low PPO KL divergence and consistent trajectory tracking performance.
+
+
+## Evaluation Results
+
+The trained PPO policy was evaluated across multiple trajectory and robustness scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, and observation/action noise disturbances.
+
+Tracking performance was evaluated using:
+
+- Mean tracking error
+- Maximum tracking error
+- Final tracking error
+- Mean reward
+- Final reward
+
+| Scenario | Mean Error (m) | Max Error (m) | Final Error (m) | Mean Reward | Final Reward |
+|---|---:|---:|---:|---:|---:|
+| Nominal | 0.00400 | 0.10388 | 0.00234 | -0.01566 | -0.01264 |
+| Shifted Centre | 0.00428 | 0.14183 | 0.00175 | -0.01627 | -0.01201 |
+| Larger Radius | 0.00496 | 0.14059 | 0.00278 | -0.01724 | -0.01319 |
+| Faster Target | 0.00307 | 0.10389 | 0.00341 | -0.01464 | -0.01393 |
+| Observation Noise | 0.00660 | 0.10398 | 0.00317 | -0.02982 | -0.02071 |
+| Action Noise | 0.00505 | 0.10318 | 0.00367 | -0.02470 | -0.01911 |
+| Observation + Action Noise | 0.00727 | 0.10327 | 0.00526 | -0.03299 | -0.02472 |
+
+The results demonstrate stable trajectory tracking and robustness under multiple uncertainty conditions while maintaining low tracking error, smooth end-effector motion, and stable control behaviour under noisy observations and actuator disturbances.
