@@ -11,7 +11,7 @@ This project implements a reinforcement learning framework for dynamic end-effec
 A simulated Fetch robotic manipulator is trained to follow a continuous moving Cartesian trajectory while maintaining smooth and stable motion under uncertainty.
 
 
-
+---
 ## Key Features
 
 - PPO-based continuous robotic control
@@ -23,7 +23,7 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 - MuJoCo-based robotic simulation
 
 
-
+---
 ## Nominal Scenario Demonstration
 
 The trained PPO policy tracking a continuous circular Cartesian trajectory in the nominal evaluation scenario.
@@ -31,7 +31,7 @@ The trained PPO policy tracking a continuous circular Cartesian trajectory in th
 
 https://github.com/user-attachments/assets/a17a533e-263b-4316-90f9-7a1faa7bb029
 
-
+---
 ## Training Summary
 
 The PPO policy was trained for approximately 5 million interaction timesteps in the MuJoCo simulation environment.
@@ -50,7 +50,7 @@ The training converged stably with low PPO KL divergence and consistent trajecto
 
 
 
-
+---
 ## Observation Space
 
 The observation space was designed to provide sufficient spatial and dynamic information for stable trajectory tracking and robust policy learning.
@@ -62,6 +62,7 @@ The observation vector includes:
 - Relative position error
 - Velocity-related information
 
+---
 ### Observation Formulation
 
 ```python
@@ -72,7 +73,7 @@ observation = [
     velocity_information,
 ]
 ```
-
+---
 ### Design Motivation
 
 The observation design was selected to improve:
@@ -89,7 +90,6 @@ Velocity information was included to support dynamic trajectory tracking and red
 This observation formulation enables the policy to learn both spatial alignment and temporal motion consistency.
 
 ---
-
 ## Action Space
 
 The action space was designed for continuous robotic control of the end-effector motion.
@@ -118,7 +118,6 @@ Discrete actions were avoided because they can produce abrupt motion transitions
 PPO is particularly suitable for continuous control problems due to its stable policy updates and strong performance in robotic reinforcement learning applications.
 
 ---
-
 ## Reward Function
 
 The reward function was designed to encourage accurate and smooth trajectory tracking while maintaining stable and realistic robotic control behaviour.
@@ -160,7 +159,7 @@ The action magnitude penalty discourages aggressive control behaviour and improv
 
 
 
-
+---
 ## Domain Randomization
 
 During training, the trajectory and uncertainty parameters were randomized as follows:
@@ -175,7 +174,7 @@ During training, the trajectory and uncertainty parameters were randomized as fo
 | Observation noise std | 0.00–0.01 m |
 | Action noise std | 0.00–0.03 |
 
-
+---
 ## Evaluation Results
 
 The trained PPO policy was evaluated across multiple trajectories and robustness scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, and observation/action noise disturbances.
@@ -202,7 +201,7 @@ The trained PPO controller achieved low tracking error and stable control perfor
 
 The results demonstrate stable trajectory tracking and robustness under multiple uncertainty conditions while maintaining low tracking error, smooth end-effector motion, and stable control behaviour under noisy observations and actuator disturbances.
 
-
+---
 ## Tracking Error Across Scenarios
 
 The figure below compares end-effector tracking error across multiple evaluation scenarios, including trajectory perturbations and observation/action noise conditions.
@@ -210,26 +209,28 @@ The figure below compares end-effector tracking error across multiple evaluation
 The PPO policy maintains low steady-state tracking error and stable convergence under all tested disturbances.
 <img width="1920" height="1440" alt="all_scenarios_tracking_error" src="https://github.com/user-attachments/assets/369c4fc3-8a15-43b7-ba6a-764b5ae10251" />
 
+---
 ## Nominal Trajectory Tracking
 
 The trained PPO policy accurately tracks the circular target trajectory under nominal conditions with smooth and stable end-effector motion.
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/8880f976-ae15-4861-87e0-135274ff496c" />
 
-
+---
 ## Robustness to Observation Noise
 
 The policy maintains stable trajectory tracking under noisy observations, demonstrating robustness to sensor uncertainty and state perturbations.
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/78470d02-b5c5-4876-82d6-c602869aa4d3" />
 
-
+---
 ## Robustness to Observation and Action Noise
 
 The PPO controller preserves stable trajectory tracking performance under simultaneous observation and action noise disturbances, while maintaining low trajectory deviation and smooth control behaviour.
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/f71b13a6-0c66-4da4-a97a-3bda0cac346c" />
 
+---
 ## Reward Across Evaluation Scenarios
 
 The reward curves demonstrate stable policy behaviour and consistent control performance across all evaluation scenarios.
@@ -240,7 +241,7 @@ Additional trajectory visualisations for all scenarios are available in the `plo
 
 
 
-
+---
 ## Robustness Demonstration
 
 Evaluation of the trained PPO policy under combined observation and action noise disturbances.
@@ -253,6 +254,7 @@ https://github.com/user-attachments/assets/e0d90623-a9cb-44a3-ab55-44f1c43affe7
 Additional videos for all scenarios are available in the `videos/` directory.
 
 
+---
 ## Robustness Analysis
 
 The trained PPO controller maintained stable trajectory tracking performance across multiple uncertainty and disturbance scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, observation noise, action noise, and combined observation-action noise perturbations.
@@ -265,7 +267,7 @@ The combined observation and action noise scenario produced the highest tracking
 
 These results indicate that the domain randomisation strategy and reward formulation contributed to improved robustness and stable dynamic trajectory tracking under uncertainty.
 
-
+---
 ## Environment
 
 - Python 3.10
@@ -274,7 +276,7 @@ These results indicate that the domain randomisation strategy and reward formula
 - Gymnasium 1.2.3
 - MuJoCo 3.3
 
-
+---
 ## Repository Structure
 
 ```text
@@ -292,12 +294,12 @@ ppo-dynamic-trajectory-tracking/
 └── README.md
 ```
 
-
+---
 ## License
 
 This project is released under the MIT License.
 
-
+---
 ## Installation
 
 Clone the repository:
@@ -315,12 +317,14 @@ python -m venv .venv
 
 Activate the virtual environment:
 
+---
 ### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
+---
 ### Linux / macOS
 
 ```bash
@@ -336,7 +340,7 @@ pip install -r requirements.txt
 
 
 
-
+---
 ## Quick Start
 
 Train the PPO policy:
