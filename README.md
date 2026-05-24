@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/a17a533e-263b-4316-90f9-7a1faa7bb029
 
 ## Training Summary
 
-The PPO policy was trained for approximately 5 million timesteps.
+The PPO policy was trained for approximately 5 million interaction timesteps in the MuJoCo simulation environment.
 
 Final training statistics:
 
