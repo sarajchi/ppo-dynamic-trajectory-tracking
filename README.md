@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![PPO](https://img.shields.io/badge/RL-PPO-green)
+![MuJoCo](https://img.shields.io/badge/Simulator-MuJoCo-red)
+
+
+
 # PPO-Based Dynamic End-Effector Trajectory Tracking in MuJoCo
 
 This project implements a reinforcement learning framework for dynamic end-effector trajectory tracking using Proximal Policy Optimisation (PPO) in MuJoCo.
