@@ -62,7 +62,7 @@ The observation vector includes:
 - Relative position error
 - Velocity-related information
 
----
+
 ### Observation Formulation
 
 ```python
@@ -73,7 +73,7 @@ observation = [
     velocity_information,
 ]
 ```
----
+
 ### Design Motivation
 
 The observation design was selected to improve:
