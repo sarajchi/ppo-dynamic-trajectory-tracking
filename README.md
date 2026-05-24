@@ -15,7 +15,8 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 
 The trained PPO policy tracking a continuous circular Cartesian trajectory in the nominal evaluation scenario.
 
-https://github.com/user-attachments/assets/394f0ca8-79fa-4074-baba-08098bcf95aa
+
+https://github.com/user-attachments/assets/a17a533e-263b-4316-90f9-7a1faa7bb029
 
 
 ## Training Summary
@@ -223,9 +224,6 @@ The reward curves demonstrate stable policy behaviour and consistent control per
 Additional trajectory visualisations for all scenarios are available in the `plots/` directory.
 
 
-The action change penalty reduces jitter and encourages smooth robotic motion suitable for real-world deployment.
-
-This reward formulation enables the PPO policy to learn stable, accurate, and robust end-effector trajectory tracking under multiple uncertainty conditions.
 
 
 ## Robustness Demonstration
