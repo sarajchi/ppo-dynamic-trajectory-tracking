@@ -5,11 +5,11 @@ This project implements a reinforcement learning framework for dynamic end-effec
 A simulated Fetch robotic manipulator is trained to follow a continuous moving Cartesian trajectory while maintaining smooth and stable motion under uncertainty.
 
 
+## Nominal Scenario Demonstration
+
+The trained PPO policy tracking a continuous circular Cartesian trajectory in the nominal evaluation scenario.
 
 https://github.com/user-attachments/assets/394f0ca8-79fa-4074-baba-08098bcf95aa
-
-
-
 
 
 ## Training Summary
