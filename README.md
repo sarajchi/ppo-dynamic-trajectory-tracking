@@ -263,11 +263,6 @@ These results indicate that the domain randomisation strategy and reward formula
 - MuJoCo 3.3
 
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Repository Structure
 
@@ -285,6 +280,48 @@ ppo-dynamic-trajectory-tracking/
 ├── LICENSE              # MIT license
 └── README.md
 ```
+
+
+
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sarajchi/ppo-dynamic-trajectory-tracking.git
+cd ppo-dynamic-trajectory-tracking
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+
+
 
 ## Quick Start
 
