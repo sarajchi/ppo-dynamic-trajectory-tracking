@@ -221,3 +221,16 @@ The action change penalty reduces jitter and encourages smooth robotic motion su
 
 This reward formulation enables the PPO policy to learn stable, accurate, and robust end-effector trajectory tracking under multiple uncertainty conditions.
 
+
+## Robustness Demonstration
+
+Evaluation of the trained PPO policy under combined observation and action noise disturbances.
+
+The policy maintains stable trajectory tracking behaviour despite noisy observations and perturbed control actions, demonstrating robustness under uncertainty.
+
+
+
+https://github.com/user-attachments/assets/161129c5-72f4-4948-95a9-0345004f980b
+
+
+
