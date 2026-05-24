@@ -41,10 +41,13 @@ Final training statistics:
 | Metric | Value |
 |---|---|
 | Total Timesteps | 5,001,216 |
-| Success Rate | 100% |
 | Mean Episode Reward | -19 |
+| Success Rate | 100% |
+| PPO KL Divergence | 0.000156 |
 | Final Policy Std | 0.245 |
 | Final Learning Rate | 1.66e-08 |
+
+
 
 The training converged stably with low PPO KL divergence and consistent trajectory tracking performance.
 
