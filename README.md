@@ -275,7 +275,6 @@ These results indicate that the domain randomisation strategy and reward formula
 - MuJoCo 3.3
 
 
-
 ## Repository Structure
 
 ```text
@@ -294,6 +293,9 @@ ppo-dynamic-trajectory-tracking/
 ```
 
 
+## License
+
+This project is released under the MIT License.
 
 
 ## Installation
