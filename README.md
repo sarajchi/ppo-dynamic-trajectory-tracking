@@ -255,3 +255,10 @@ These results indicate that the domain randomisation strategy and reward formula
 - PyTorch 2.11
 - Gymnasium 1.2.3
 - MuJoCo 3.3
+
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
