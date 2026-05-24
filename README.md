@@ -9,6 +9,14 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 <img width="1280" height="960" alt="Adobe Express - Kp_50_Rd_0 2 (4)" src="https://github.com/user-attachments/assets/bd29acec-b217-4454-b6c5-8f648e0ed620" />
 
 
+
+
+
+
+https://github.com/user-attachments/assets/b6a9f877-3386-4cf2-b9cb-8a296b2752c7
+
+
+
 ## Training Summary
 
 The PPO policy was trained for approximately 5 million timesteps.
