@@ -11,6 +11,19 @@ This project implements a reinforcement learning framework for dynamic end-effec
 A simulated Fetch robotic manipulator is trained to follow a continuous moving Cartesian trajectory while maintaining smooth and stable motion under uncertainty.
 
 
+
+## Key Features
+
+- PPO-based continuous robotic control
+- Dynamic Cartesian trajectory tracking
+- Robustness under observation and action noise
+- Domain randomisation during training
+- Evaluation across multiple disturbance scenarios
+- Automated plotting and video recording
+- MuJoCo-based robotic simulation
+
+
+
 ## Nominal Scenario Demonstration
 
 The trained PPO policy tracking a continuous circular Cartesian trajectory in the nominal evaluation scenario.
