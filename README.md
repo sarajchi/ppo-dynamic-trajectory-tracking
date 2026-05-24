@@ -100,3 +100,112 @@ The reward curves demonstrate stable policy behaviour and consistent control per
 
 Additional trajectory visualisations for all scenarios are available in the `plots/` directory.
 
+## Observation Space
+
+The observation space was designed to provide sufficient spatial and dynamic information for stable trajectory tracking and robust policy learning.
+
+The observation vector includes:
+
+- End-effector position
+- Target position
+- Relative position error
+- Velocity-related information
+
+### Observation Formulation
+
+```python
+observation = [
+    end_effector_position,
+    target_position,
+    target_position - end_effector_position,
+    velocity_information,
+]
+```
+
+### Design Motivation
+
+The observation design was selected to improve:
+
+- trajectory tracking accuracy
+- motion smoothness
+- policy stability
+- robustness under uncertainty
+
+Relative position information helps the PPO policy directly estimate tracking error and improves generalisation across different trajectory centres and radii.
+
+Velocity information was included to support dynamic trajectory tracking and reduce motion lag and oscillatory behaviour.
+
+This observation formulation enables the policy to learn both spatial alignment and temporal motion consistency.
+
+---
+
+## Action Space
+
+The action space was designed for continuous robotic control of the end-effector motion.
+
+### Action Formulation
+
+```python
+action = continuous_control_command
+```
+
+The PPO policy outputs continuous actions at every timestep to control the robotic motion smoothly along the target trajectory.
+
+### Design Motivation
+
+A continuous action space was selected because robotic trajectory tracking requires smooth and physically realistic motion generation.
+
+Continuous control improves:
+
+- motion smoothness
+- tracking stability
+- low-jitter behaviour
+- robustness to disturbances
+
+Discrete actions were avoided because they can produce abrupt motion transitions and unstable tracking behaviour in robotic manipulation tasks.
+
+PPO is particularly suitable for continuous control problems due to its stable policy updates and strong performance in robotic reinforcement learning applications.
+
+---
+
+## Reward Function
+
+The reward function was designed to encourage accurate and smooth trajectory tracking while maintaining stable and realistic robotic control behaviour.
+
+### Reward Formulation
+
+```python
+reward = 0.0
+
+reward -= position_error
+reward -= 0.09 * velocity_error
+reward -= 0.01 * action_magnitude
+reward -= 0.02 * action_change
+```
+
+Where:
+
+- `position_error` is the Euclidean distance between the target and end-effector positions
+- `velocity_error` measures the mismatch between target and end-effector velocities
+- `action_magnitude` penalises excessively large control commands
+- `action_change` penalises abrupt changes between consecutive actions
+
+### Design Motivation
+
+The reward function was designed to balance:
+
+- tracking accuracy
+- smooth motion generation
+- control stability
+- robustness under noisy conditions
+
+The position error term encourages accurate target tracking.
+
+The velocity error term improves temporal consistency and reduces dynamic mismatch during motion.
+
+The action magnitude penalty discourages aggressive control behaviour and improves stability.
+
+The action change penalty reduces jitter and encourages smooth robotic motion suitable for real-world deployment.
+
+This reward formulation enables the PPO policy to learn stable, accurate, and robust end-effector trajectory tracking under multiple uncertainty conditions.
+
