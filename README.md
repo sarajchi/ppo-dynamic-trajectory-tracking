@@ -48,8 +48,7 @@ Final training statistics:
 | Final Learning Rate | 1.66e-08 |
 
 
-
-The training converged stably with low PPO KL divergence and consistent trajectory tracking performance.
+The PPO policy converged stably with low KL divergence, smooth policy updates, and consistent trajectory tracking performance.
 
 
 
