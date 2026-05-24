@@ -6,15 +6,6 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 
 
 
-<img width="1280" height="960" alt="Adobe Express - Kp_50_Rd_0 2 (4)" src="https://github.com/user-attachments/assets/bd29acec-b217-4454-b6c5-8f648e0ed620" />
-
-
-
-
-
-
-
-
 https://github.com/user-attachments/assets/394f0ca8-79fa-4074-baba-08098bcf95aa
 
 
