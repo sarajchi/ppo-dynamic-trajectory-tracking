@@ -262,3 +262,18 @@ These results indicate that the domain randomisation strategy and reward formula
 ```bash
 pip install -r requirements.txt
 ```
+
+## Repository Structure
+
+```text
+ppo-dynamic-trajectory-tracking/
+│
+├── models/              # Trained PPO policies
+├── plots/               # Evaluation plots
+├── videos/              # Evaluation videos
+├── train.py             # PPO training script
+├── evaluation.py        # Evaluation and plotting script
+├── record_video.py      # Video recording utility
+├── requirements.txt     # Python dependencies
+└── README.md
+```
