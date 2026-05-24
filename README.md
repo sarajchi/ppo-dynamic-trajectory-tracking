@@ -277,3 +277,24 @@ ppo-dynamic-trajectory-tracking/
 ├── requirements.txt     # Python dependencies
 └── README.md
 ```
+
+
+## Quick Start
+
+Train the PPO policy:
+
+```bash
+python train.py
+```
+
+Evaluate the trained model:
+
+```bash
+python evaluation.py
+```
+
+Record evaluation videos:
+
+```bash
+python record_video.py
+```
