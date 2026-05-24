@@ -13,7 +13,11 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 
 
 
-https://github.com/user-attachments/assets/b6a9f877-3386-4cf2-b9cb-8a296b2752c7
+
+
+https://github.com/user-attachments/assets/394f0ca8-79fa-4074-baba-08098bcf95aa
+
+
 
 
 
