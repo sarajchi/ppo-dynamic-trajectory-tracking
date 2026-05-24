@@ -232,6 +232,9 @@ The policy maintains stable trajectory tracking behaviour despite noisy observat
 https://github.com/user-attachments/assets/1e9260f3-2663-421c-aade-fa7fbbc98f77
 
 
+Additional videos for all scenarios are available in the `videos/` directory.
+
+
 ## Robustness Analysis
 
 The trained PPO controller maintained stable trajectory tracking performance across multiple uncertainty and disturbance scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, observation noise, action noise, and combined observation-action noise perturbations.
