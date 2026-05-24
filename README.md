@@ -245,3 +245,10 @@ The combined observation and action noise scenario produced the highest tracking
 These results indicate that the domain randomisation strategy and reward formulation contributed to improved robustness and stable dynamic trajectory tracking under uncertainty.
 
 
+## Environment
+
+- Python 3.10
+- Stable-Baselines3 2.8.0
+- PyTorch 2.11
+- Gymnasium 1.2.3
+- MuJoCo 3.3
