@@ -294,10 +294,6 @@ ppo-dynamic-trajectory-tracking/
 └── README.md
 ```
 
----
-## License
-
-This project is released under the MIT License.
 
 ---
 ## Installation
