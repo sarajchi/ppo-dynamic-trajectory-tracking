@@ -281,9 +281,10 @@ ppo-dynamic-trajectory-tracking/
 ├── evaluation.py        # Evaluation and plotting script
 ├── record_video.py      # Video recording utility
 ├── requirements.txt     # Python dependencies
+├── .gitignore           # Git ignored files
+├── LICENSE              # MIT license
 └── README.md
 ```
-
 
 ## Quick Start
 
