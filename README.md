@@ -291,7 +291,7 @@ ppo-dynamic-trajectory-tracking/
 ├── requirements.txt     # Python dependencies
 ├── .gitignore           # Git ignored files
 ├── LICENSE              # MIT license
-└── README.md
+└── README.md            # Project documentation
 ```
 
 
