@@ -92,4 +92,9 @@ The PPO controller preserves stable trajectory tracking performance under simult
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/f71b13a6-0c66-4da4-a97a-3bda0cac346c" />
 
+## Reward Across Evaluation Scenarios
+
+The reward curves demonstrate stable policy behaviour and consistent control performance across all evaluation scenarios.
+
+<img width="1920" height="1440" alt="all_scenarios_rewards" src="https://github.com/user-attachments/assets/be3a2f3d-f74d-4d5c-8583-1d1e33a4460b" />
 
