@@ -72,3 +72,9 @@ The figure below compares end-effector tracking error across multiple evaluation
 The PPO policy maintains low steady-state tracking error and stable convergence under all tested disturbances.
 <img width="1920" height="1440" alt="all_scenarios_tracking_error" src="https://github.com/user-attachments/assets/369c4fc3-8a15-43b7-ba6a-764b5ae10251" />
 
+## Nominal Trajectory Tracking
+
+The trained PPO policy accurately tracks the circular target trajectory under nominal conditions with smooth and stable end-effector motion.
+
+<img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/8880f976-ae15-4861-87e0-135274ff496c" />
+
