@@ -188,6 +188,8 @@ Tracking performance was evaluated using:
 - Mean reward
 - Final reward
 
+The trained PPO controller achieved low tracking error and stable control performance across all evaluation scenarios.
+
 | Scenario | Mean Error (m) | Max Error (m) | Final Error (m) | Mean Reward | Final Reward |
 |---|---:|---:|---:|---:|---:|
 | Nominal | 0.00400 | 0.10388 | 0.00234 | -0.01566 | -0.01264 |
