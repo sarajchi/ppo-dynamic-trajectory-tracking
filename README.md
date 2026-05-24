@@ -78,3 +78,9 @@ The trained PPO policy accurately tracks the circular target trajectory under no
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/8880f976-ae15-4861-87e0-135274ff496c" />
 
+
+## Robustness to Observation Noise
+
+The policy maintains stable trajectory tracking under noisy observations, demonstrating robustness to sensor uncertainty and state perturbations.
+
+<img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/78470d02-b5c5-4876-82d6-c602869aa4d3" />
