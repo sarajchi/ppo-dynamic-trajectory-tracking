@@ -60,10 +60,15 @@ The policy receives spatial and motion-related observations and outputs continuo
 
 Domain randomisation and noise perturbations were incorporated during training to improve robustness and policy generalisation.
 
+
+
+
 ---
 ## Observation Space
 
-The observation space was designed to provide sufficient spatial and dynamic information for stable trajectory tracking and robust policy learning.
+The observation space was designed to provide sufficient spatial and dynamic information for stable trajectory tracking, predictive motion behaviour, and robust policy learning under uncertainty.
+
+The observation vector combines robot state information from the FetchReach environment with additional trajectory-related features.
 
 The observation vector includes:
 
@@ -71,33 +76,66 @@ The observation vector includes:
 - Target position
 - Relative position error
 - Velocity-related information
-
+- Target velocity
+- Target acceleration
+- Next target position
+- Trajectory phase encoding
 
 ### Observation Formulation
 
 ```python
 observation = [
-    end_effector_position,
-    target_position,
-    target_position - end_effector_position,
-    velocity_information,
+    original_environment_observation,
+    target_velocity,
+    target_acceleration,
+    next_target_position,
+    trajectory_phase,
 ]
 ```
 
-### Design Motivation
+Where:
+
+- `original_environment_observation` contains robot state information provided by the FetchReach environment
+- `target_velocity` provides dynamic motion information of the moving target
+- `target_acceleration` supports motion anticipation during trajectory tracking
+- `next_target_position` provides short-horizon predictive information
+- `trajectory_phase = [sin(t), cos(t)]` encodes periodic trajectory progression
+
+Observation noise was additionally injected during training to improve robustness and policy generalisation under uncertain sensing conditions.
+
+## Design Motivation
 
 The observation design was selected to improve:
 
 - trajectory tracking accuracy
+- predictive motion behaviour
 - motion smoothness
 - policy stability
 - robustness under uncertainty
 
-Relative position information helps the PPO policy directly estimate tracking error and improves generalisation across different trajectory centres and radii.
+Relative position information helps the PPO policy directly estimate tracking error and generalise across different trajectory centres and radii.
 
-Velocity information was included to support dynamic trajectory tracking and reduce motion lag and oscillatory behaviour.
+Velocity and acceleration information improve temporal consistency and reduce tracking lag during dynamic motion.
 
-This observation formulation enables the policy to learn both spatial alignment and temporal motion consistency.
+Including future target information enables the policy to anticipate target movement rather than reacting only to instantaneous position error.
+
+Trajectory phase encoding provides periodic motion context for continuous circular trajectory tracking.
+
+This augmented observation formulation enables the policy to learn both spatial alignment and temporal motion consistency in dynamic robotic control tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## Action Space
