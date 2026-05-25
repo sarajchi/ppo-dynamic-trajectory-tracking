@@ -172,9 +172,9 @@ During training, the trajectory and uncertainty parameters were randomized as fo
 | Centre Y | 0.75 ± 0.10 m |
 | Centre Z | 0.6 ± 0.03 m |
 | Radius | 0.10–0.20 m |
-| Time step / speed factor | 0.01–0.035 |
+| Time step / speed factor | 0.01–0.035 s |
 | Observation noise std | 0.00–0.01 m |
-| Action noise std | 0.00–0.03 |
+| Action noise std | 0.00–0.03 m |
 
 ---
 ## Evaluation Results
