@@ -51,6 +51,14 @@ Final training statistics:
 The PPO policy converged stably with low KL divergence, smooth policy updates, and consistent trajectory tracking performance.
 
 
+---
+## Method Overview
+
+The proposed framework combines PPO-based continuous control with dynamic Cartesian trajectory generation in a MuJoCo robotic simulation environment.
+
+The policy receives spatial and motion-related observations and outputs continuous control commands to minimise trajectory tracking error while maintaining smooth robotic motion.
+
+Domain randomisation and noise perturbations were incorporated during training to improve robustness and policy generalisation.
 
 ---
 ## Observation Space
