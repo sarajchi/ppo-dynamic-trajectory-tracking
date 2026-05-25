@@ -160,6 +160,23 @@ The action magnitude penalty discourages aggressive control behaviour and improv
 
 
 
+---
+## Trajectory Representation
+
+The target trajectory is represented as a continuous circular Cartesian path in 3D space.
+
+At each timestep, the desired target position is computed from a parameterised circular trajectory:
+
+```python
+target = [
+    center_x + radius * cos(t),
+    center_y + radius * sin(t),
+    center_z,
+]
+
+
+
+
 
 ---
 ## Domain Randomization
