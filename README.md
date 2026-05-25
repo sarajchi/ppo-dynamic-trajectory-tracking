@@ -19,7 +19,7 @@ A simulated Fetch robotic manipulator is trained to follow a continuous moving C
 - Robustness under observation and action noise
 - Domain randomisation during training
 - Evaluation across multiple disturbance scenarios
-- Automated plotting and video recording
+- Automated evaluation plotting and trajectory visualisation
 - MuJoCo-based robotic simulation
 
 
