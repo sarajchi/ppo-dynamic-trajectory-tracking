@@ -163,7 +163,7 @@ The position error term encourages accurate target tracking.
 
 The velocity error term improves temporal consistency and reduces dynamic mismatch during motion.
 
-The action magnitude penalty discourages aggressive control behaviour and improves stability.
+The action change penalty encourages smoother control transitions and reduces oscillatory behaviour between consecutive timesteps.
 
 
 
