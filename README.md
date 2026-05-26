@@ -359,6 +359,14 @@ These results indicate that the domain randomisation strategy and reward formula
 - Gymnasium 1.2.3
 - MuJoCo 3.3
 
+
+---
+## License
+
+This project is released under the MIT License.
+
+
+
 ---
 ## Repository Structure
 
