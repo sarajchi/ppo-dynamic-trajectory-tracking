@@ -165,6 +165,64 @@ Discrete actions were avoided because they can produce abrupt motion transitions
 
 PPO is particularly suitable for continuous control problems due to its stable policy updates and strong performance in robotic reinforcement learning applications.
 
+
+
+
+
+
+
+
+---
+## Action Space
+
+The action space was designed for continuous robotic control of the end-effector motion in Cartesian trajectory tracking tasks.
+
+### Action Formulation
+
+```python
+action = PPO_policy(observation)
+
+noisy_action = action + action_noise
+
+clipped_action = clip(
+    noisy_action,
+    action_lower_bound,
+    action_upper_bound,
+)
+```
+
+The PPO policy outputs continuous control actions at every timestep to generate smooth robotic motion along the target trajectory.
+
+Action noise was additionally injected during training to improve robustness against control disturbances and imperfect actuation conditions.
+
+### Design Motivation
+
+A continuous action space was selected because robotic trajectory tracking requires smooth and physically realistic motion generation.
+
+Continuous control improves:
+
+- motion smoothness
+- tracking stability
+- low-jitter behaviour
+- robustness to disturbances
+
+Discrete actions were avoided because they can produce abrupt motion transitions and unstable tracking behaviour in robotic manipulation tasks.
+
+Action clipping was used to maintain valid actuator commands within the environment action bounds.
+
+PPO is particularly suitable for continuous robotic control problems due to its stable policy updates and strong performance in robotic reinforcement learning applications.
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ## Reward Function
 
