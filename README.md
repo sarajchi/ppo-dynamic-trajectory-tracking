@@ -270,7 +270,7 @@ Tracking performance was evaluated using:
 - Mean reward
 - Final reward
 
-The trained PPO controller achieved low tracking error and stable control performance across all evaluation scenarios.
+The trained PPO policy achieved low tracking error and stable control performance across all evaluation scenarios.
 
 | Scenario | Mean Error (m) | Max Error (m) | Final Error (m) | Mean Reward | Final Reward |
 |---|---:|---:|---:|---:|---:|
@@ -282,7 +282,7 @@ The trained PPO controller achieved low tracking error and stable control perfor
 | Action Noise | 0.00505 | 0.10318 | 0.00367 | -0.02470 | -0.01911 |
 | Observation + Action Noise | 0.00727 | 0.10327 | 0.00526 | -0.03299 | -0.02472 |
 
-The results demonstrate stable trajectory tracking and robustness under multiple uncertainty conditions while maintaining low tracking error, smooth end-effector motion, and stable control behaviour under noisy observations and actuator disturbances.
+The results demonstrate stable trajectory tracking and robustness to multiple uncertainty conditions, while maintaining low tracking error, smooth end-effector trajectory-tracking behaviour, and stable control behaviour under noisy observations and actuator disturbances.
 
 ---
 ## Tracking Error Across Scenarios
