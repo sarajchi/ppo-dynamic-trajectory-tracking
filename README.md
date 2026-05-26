@@ -134,16 +134,20 @@ The action space was designed for continuous robotic control of the end-effector
 ### Action Formulation
 
 ```python
-action = PPO_policy(observation)
+policy_action = PPO_policy(observation)
 
-noisy_action = action + action_noise
+noisy_action = policy_action + action_noise
 
 clipped_action = clip(
     noisy_action,
     action_lower_bound,
     action_upper_bound,
 )
+
+env.step(clipped_action)
 ```
+
+
 
 The PPO policy outputs continuous control actions at every timestep to generate smooth robotic motion along the target trajectory.
 
