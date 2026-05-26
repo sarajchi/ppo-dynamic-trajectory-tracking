@@ -329,7 +329,7 @@ Additional plots for all scenarios are available in the `plots/` directory.
 
 Evaluation of the trained PPO policy under combined observation and action noise disturbances.
 
-The policy maintains stable trajectory tracking behaviour despite noisy observations and perturbed control actions, demonstrating robustness under uncertainty.
+The PPO policy maintains stable trajectory-tracking performance despite noisy observations and perturbed control actions, demonstrating robustness under uncertainty.
 
 https://github.com/user-attachments/assets/e0d90623-a9cb-44a3-ab55-44f1c43affe7
 
