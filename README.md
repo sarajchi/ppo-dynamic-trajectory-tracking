@@ -340,11 +340,11 @@ Additional videos for all scenarios are available in the `videos/` directory.
 ---
 ## Robustness Analysis
 
-The trained PPO controller maintained stable trajectory tracking performance across multiple uncertainty and disturbance scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, observation noise, action noise, and combined observation-action noise perturbations.
+The trained PPO policy maintained stable trajectory tracking performance across multiple uncertainty and disturbance scenarios, including shifted trajectory centres, larger trajectory radii, faster target motion, observation noise, action noise, and combined observation-action noise perturbations.
 
 The evaluation results demonstrate that the policy generalised effectively beyond the nominal training trajectory while preserving smooth end-effector motion and low tracking error.
 
-Under observation and action noise disturbances, the controller continued to follow the desired Cartesian trajectory with only minor deviations, indicating robustness to noisy sensing and perturbed control commands.
+Under observation and action noise disturbances, the policy continued to follow the desired Cartesian trajectory with only minor deviations, indicating robustness to noisy sensing and perturbed control commands.
 
 The combined observation and action noise scenario produced the highest tracking error among all evaluated conditions; however, the policy remained stable and successfully completed the trajectory without divergence or oscillatory behaviour.
 
