@@ -309,7 +309,7 @@ The policy maintains stable trajectory tracking under noisy observations, demons
 ---
 ## Robustness to Observation and Action Noise
 
-The PPO controller preserves stable trajectory tracking performance under simultaneous observation and action noise disturbances, while maintaining low trajectory deviation and smooth control behaviour.
+The PPO policy preserves stable trajectory tracking performance under simultaneous observation and action noise disturbances, while maintaining low trajectory deviation and smooth control behaviour.
 
 <img width="1920" height="1440" alt="trajectory_xy" src="https://github.com/user-attachments/assets/f71b13a6-0c66-4da4-a97a-3bda0cac346c" />
 
