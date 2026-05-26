@@ -85,7 +85,7 @@ The observation vector includes:
 
 ```python
 observation = [
-    original_environment_observation,
+    base_environment_observation,
     target_velocity,
     target_acceleration,
     next_target_position,
@@ -95,7 +95,7 @@ observation = [
 
 Where:
 
-- `original_environment_observation` contains robot state information provided by the FetchReach environment
+- `base_environment_observation` contains robot state information provided by the FetchReach environment
 - `target_velocity` provides dynamic motion information of the moving target
 - `target_acceleration` supports motion anticipation during trajectory tracking
 - `next_target_position` provides short-horizon predictive information
