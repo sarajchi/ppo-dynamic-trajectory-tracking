@@ -74,7 +74,7 @@ The observation vector includes:
 
 - End-effector position
 - Target position
-- Relative position error
+- Goal-relative positional information
 - End-effector velocity-related information
 - Target velocity
 - Target acceleration
