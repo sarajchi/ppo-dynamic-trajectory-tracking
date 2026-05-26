@@ -360,12 +360,6 @@ These results indicate that the domain randomisation strategy and reward formula
 - MuJoCo 3.3
 
 
----
-## License
-
-This project is released under the MIT License.
-
-
 
 ---
 ## Repository Structure
@@ -447,3 +441,9 @@ Record evaluation videos:
 ```bash
 python record_video.py
 ```
+
+
+---
+## License
+
+This project is released under the MIT License.
