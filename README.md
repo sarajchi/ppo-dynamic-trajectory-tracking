@@ -227,7 +227,7 @@ The action change penalty encourages smoother control transitions and reduces os
 ---
 ## Trajectory Representation
 
-The target trajectory is represented as a continuous circular Cartesian path in 3D space.
+The target trajectory is represented as a continuous circular Cartesian trajectory in the XY plane with a fixed Z coordinate.
 
 At each simulation timestep, the desired target position is generated from a parameterised circular trajectory:
 
