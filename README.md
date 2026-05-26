@@ -365,14 +365,14 @@ These results indicate that the domain randomisation strategy and reward formula
 ```text
 ppo-dynamic-trajectory-tracking/
 │
-├── models/              # Trained PPO policies
+├── models/              # Trained PPO models
 ├── plots/               # Evaluation plots
 ├── videos/              # Evaluation videos
 ├── train.py             # PPO training script
 ├── evaluation.py        # Evaluation and plotting script
 ├── record_video.py      # Video recording utility
 ├── requirements.txt     # Python dependencies
-├── .gitignore           # Git ignored files
+├── .gitignore           # Git ignored configuration
 ├── LICENSE              # MIT license
 └── README.md            # Project documentation
 ```
