@@ -126,52 +126,6 @@ This augmented observation formulation enables the policy to learn both spatial 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
----
-## Action Space
-
-The action space was designed for continuous robotic control of the end-effector motion.
-
-### Action Formulation
-
-```python
-action = continuous_control_command
-```
-
-The PPO policy outputs continuous actions at every timestep to control the robotic motion smoothly along the target trajectory.
-
-### Design Motivation
-
-A continuous action space was selected because robotic trajectory tracking requires smooth and physically realistic motion generation.
-
-Continuous control improves:
-
-- motion smoothness
-- tracking stability
-- low-jitter behaviour
-- robustness to disturbances
-
-Discrete actions were avoided because they can produce abrupt motion transitions and unstable tracking behaviour in robotic manipulation tasks.
-
-PPO is particularly suitable for continuous control problems due to its stable policy updates and strong performance in robotic reinforcement learning applications.
-
-
-
-
-
-
-
-
 ---
 ## Action Space
 
