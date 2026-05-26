@@ -243,7 +243,7 @@ target = [
 
 
 ---
-## Domain Randomization
+## Domain Randomisation and Noise Injection
 
 During training, the trajectory and uncertainty parameters were randomized as follows:
 
