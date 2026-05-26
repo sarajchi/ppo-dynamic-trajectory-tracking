@@ -400,7 +400,7 @@ Activate the virtual environment:
 ### Windows
 
 ```bash
-.venv\Scripts\activate
+.\.venv\Scripts\activate
 ```
 
 
