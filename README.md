@@ -320,7 +320,7 @@ The reward curves demonstrate stable policy behaviour and consistent control per
 
 <img width="1920" height="1440" alt="all_scenarios_rewards" src="https://github.com/user-attachments/assets/be3a2f3d-f74d-4d5c-8583-1d1e33a4460b" />
 
-Additional trajectory visualisations for all scenarios are available in the `plots/` directory.
+Additional plots for all scenarios are available in the `plots/` directory.
 
 
 
